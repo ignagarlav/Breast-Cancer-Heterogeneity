@@ -48,7 +48,7 @@ echo "Python version: $(python --version)"
 echo "Conda environment: $CONDA_DEFAULT_ENV"
 echo "Python path: $(which python)"
 
-python /home/igarzonalva/Proyecto_SC_TNBC/scripts/GSE161529/alltypes/Integration/IntegrationScAnvi.py
+python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/02Integration/IntegrationScAnvi.py
 
 
 echo "Script completed successfully."
