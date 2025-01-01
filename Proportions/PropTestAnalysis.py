@@ -1,3 +1,5 @@
+'''Use scvi-env to run this script'''
+
 
 import scProportionTest as pt
 import pandas as pd
@@ -6,11 +8,11 @@ results = pd.read_csv("/Users/joseignaciogarzonalvarez/proyectosPython/singlecel
 
 results1 = pd.read_csv("/Users/joseignaciogarzonalvarez/proyectosPython/singlecelltnbc/GSE162929/alltypes/PropTest/proportiontest/scPropTest_TNBCHER2_results.csv")
 
-results2 = pd.read_csv("/Users/joseignaciogarzonalvarez/proyectosPython/singlecelltnbc/GSE162929/alltypes/PropTest/proportiontest/scPropTest_ERHER2_results.csv")
+# En ambos resultados, TNBC es la referencia 
 
-plot = pt.point_range_plot(results, figsize=(6,4), fold_difference = 1,alpha = 0.001,ascending = False,plot_title = "TNBC vs ER")
-plot = pt.point_range_plot(results1, figsize=(6,4),fold_difference = 1,alpha = 0.001,ascending = False, plot_title = "TNBC vs HER2")
-plot = pt.point_range_plot(results2, figsize=(6,4),fold_difference = 1,alpha = 0.001,ascending = False, plot_title = "ER vs HER2")
+plot = pt.point_range_plot(results, figsize=(6,4), fold_difference = 1,alpha = 0.001,ascending = False,plot_title = "ER vs TNBC ")
+plot = pt.point_range_plot(results1, figsize=(6,4),fold_difference = 1,alpha = 0.001,ascending = False, plot_title = "HER2 vs TNBC")
+
 '''
 AntigenMyeloid_TNBC          487
 B Cells_ER                   475
