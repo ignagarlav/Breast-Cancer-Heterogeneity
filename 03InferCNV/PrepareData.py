@@ -3,32 +3,48 @@
 import scanpy as sc 
 import pandas as pd
 import os
+import numpy as np
 
-infer_CNV_dir = "/home/igarzonalva/Proyecto_SC_TNBC/data/GSE161529/alltypes/InferCNV"
-data_dir = "/home/igarzonalva/Proyecto_SC_TNBC/data/GSE161529/alltypes"
 
+
+data_dir = os.getenv("ADATA_DIR")
 adata = sc.read_h5ad(os.path.join(data_dir,"adata_GenAnno.h5ad"))
 
 
-for i, tumor in enumerate(["ER", "HER2", "TNBC"], start=1):
+infer_CNV_dir = os.getenv("INFER_CNV_DIR")
+file_idx = 1
+for tumor in ["ER", "HER2", "TNBC"]:
 
-    countmatrix = adata[adata.obs['subtype'] == tumor].layers["counts"].todense().T
-    print(f"Dimensions of count matrix: {countmatrix.shape}")
+    # Filter data for the current tumor type
+    adata_tumor = adata[adata.obs['subtype'] == tumor]
+    
+    # Fetch metadata before splitting
+    metadata = adata_tumor.obs['GenAnno']
+    metadata_file = os.path.join(infer_CNV_dir, f"metadata_infercnv_{file_idx}.tsv")
+    metadata.to_csv(metadata_file, sep="\t", index=True, header=False)
+    print(f"Saved metadata to {metadata_file}")
 
-    counts_file = os.path.join(infer_CNV_dir,f"counts_matrix_infercnv_{i}.tsv")
-    pd.DataFrame(countmatrix,
-                index=adata[adata.obs['subtype'] == tumor].var_names, 
-                columns=adata[adata.obs['subtype'] == tumor].obs_names).to_csv(
+    # Split the data into 3 subsets
+    adata_tumor = adata_tumor[np.random.permutation(adata_tumor.obs_names)]
+    split_size = adata_tumor.n_obs // 3
+    subset1 = adata_tumor[:split_size].copy()
+    subset2 = adata_tumor[split_size:2*split_size].copy()
+    subset3 = adata_tumor[2*split_size:].copy()
+
+    # Fetch data
+    for subset in [subset1, subset2, subset3]:
+        
+        countmatrix = subset.layers["counts"].todense().T
+        print(f"Dimensions of count matrix: {countmatrix.shape}")
+
+        counts_file = os.path.join(infer_CNV_dir,f"counts_matrix_infercnv_{file_idx}.tsv")
+        pd.DataFrame(countmatrix,
+                index=subset.var_names, 
+                columns=subset.obs_names).to_csv(
                     counts_file, 
                     sep="\t", 
                     header=True, 
                     index=True
                     )
-    print(f"Saved counts matrix to {counts_file}")
-
-    metadata = adata[adata.obs['subtype'] == tumor].obs['GenAnno']
-    metadata_file = os.path.join(infer_CNV_dir, f"metadata_infercnv_{i}.tsv")
-
-    
-    metadata.to_csv(metadata_file, sep="\t", index=True, header=False)
-    print(f"Saved metadata to {metadata_file}")
+        print(f"Saved counts matrix to {counts_file}")
+        file_idx += 1

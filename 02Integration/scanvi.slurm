@@ -10,8 +10,8 @@
 #SBATCH --mail-user=igarzonalva@alumni.unav.es   # Dirección de correo
 #SBATCH --mail-type=END,FAIL         # Notificaciones por correo
 
-export DATA_DIR="/home/igarzonalva/Proyecto_SC_TNBC/scripts/GSE161529/alltypes/Integration"
-export MODEL_DIR="/home/igarzonalva/Proyecto_SC_TNBC/scripts/GSE161529/alltypes/Integration/models"
+export DATA_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/Integration/adata"
+export MODEL_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/Integration/models"
 
 # Change to the working directory
 cd /home/igarzonalva/Proyecto_SC_TNBC

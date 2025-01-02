@@ -34,14 +34,18 @@ scvi_ref_path = os.path.join(model_dir, "scvi_model")
 
 # Load the model architecture (e.g., SCVI)
 adata.obs['cell_type'] = adata.obs['GenAnno'].copy()
+adata.obs['cell_type'] = adata.obs['cell_type'].astype('category')
 print(f"Unique cell types: {adata.obs['cell_type'].unique()}")
 
 adata_hvg = adata[:, adata.var.highly_variable].copy()
+scvi.model.SCVI.setup_anndata(
+    adata_hvg,
+    batch_key="batch",
+    labels_key="cell_type",  # Correct the key
+    layer="counts"
+)
 model = scvi.model.SCVI.load(scvi_ref_path,adata_hvg)
 
-
-
-# No hace falta aquí setup andata porque lo hace SCANVI 
 scanvi_model = scvi.model.SCANVI.from_scvi_model(model, 
                                       unlabeled_category="Unknown",
                                       labels_key='cell_type') 
