@@ -14,7 +14,7 @@ infercnv_obj = CreateInfercnvObject(raw_counts_matrix=mat,
                                     annotations_file=metadata_file_dir,
                                     delim="\t",
                                     gene_order_file=gene_ordering,
-                                    ref_group_names=c('T Cells','B Cells'))
+                                    ref_group_names=c('TCells','B Cells'))
 
 
 options(scipen = 100)

@@ -45,4 +45,4 @@ $PYTHON_BIN --version
 
 $PYTHON_BIN /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/03InferCNV/PrepareData.py
 
-conda deactivate pyscenic-git-env
+conda deactivate 

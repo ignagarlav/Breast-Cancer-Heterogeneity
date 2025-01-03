@@ -31,7 +31,7 @@ if not os.path.exists(model_dir):
 
 scvi.model.SCVI.setup_anndata(adata_hvgs, 
                             batch_key="batch", #  Eliminará los efectos técnicos entre las pacientes. 
-                            labels_key="subtype", # Preservará las diferencias biológicas relevantes entre los subtipos tumorales (TNBC, ER+, HER2+).
+                            #labels_key="subtype", # Preservará las diferencias biológicas relevantes entre los subtipos tumorales (TNBC, ER+, HER2+).
                             layer="counts")
 
 

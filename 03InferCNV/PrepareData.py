@@ -18,11 +18,6 @@ for tumor in ["ER", "HER2", "TNBC"]:
     # Filter data for the current tumor type
     adata_tumor = adata[adata.obs['subtype'] == tumor]
     
-    # Fetch metadata before splitting
-    metadata = adata_tumor.obs['GenAnno']
-    metadata_file = os.path.join(infer_CNV_dir, f"metadata_infercnv_{file_idx}.tsv")
-    metadata.to_csv(metadata_file, sep="\t", index=True, header=False)
-    print(f"Saved metadata to {metadata_file}")
 
     # Split the data into 3 subsets
     adata_tumor = adata_tumor[np.random.permutation(adata_tumor.obs_names)]
@@ -33,6 +28,12 @@ for tumor in ["ER", "HER2", "TNBC"]:
 
     # Fetch data
     for subset in [subset1, subset2, subset3]:
+        
+        # Fetch metadata before splitting
+        metadata = subset.obs['GenAnno']
+        metadata_file = os.path.join(infer_CNV_dir, f"metadata_infercnv_{file_idx}.tsv")
+        metadata.to_csv(metadata_file, sep="\t", index=True, header=False)
+        print(f"Saved metadata to {metadata_file}")
         
         countmatrix = subset.layers["counts"].todense().T
         print(f"Dimensions of count matrix: {countmatrix.shape}")
