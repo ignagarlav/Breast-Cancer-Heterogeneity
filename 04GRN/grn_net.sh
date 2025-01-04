@@ -1,14 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=grnboost2
-#SBATCH --array=0-2  # One job for each tumor type
-#SBATCH --output=/home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/dask_grnboost2_%A_%a.out
-#SBATCH --error=/home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/dask_grnboost2_%A_%a.err
-#SBATCH --time=20:00:00
+#SBATCH --job-name=locgrn
+#SBATCH --output=/home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/loc_dask_grnboost2_%A_%a.out
+#SBATCH --error=/home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/loc_dask_grnboost2_%A_%a.err
+#SBATCH --time=23:00:00
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=1
 #SBATCH --mem=64GB
 #SBATCH --partition=short
-#SBATCH --array=0-2
 
 # Change to the working directory
 cd /home/igarzonalva/Proyecto_SC_TNBC
@@ -45,20 +43,6 @@ echo $DATA_DIR
 echo $TF_DIR
 echo $NETWORK_DIR
 
-# Define the list of tumor subtypes
-TUMOR_SUBTYPES=("HER2" "ER" "TNBC")
 
-# Select the subtype based on the array task ID
-TUMOR_SUBTYPE=${TUMOR_SUBTYPES[$SLURM_ARRAY_TASK_ID]}
-
-echo "Processing tumor subtype: $TUMOR_SUBTYPE"
-# [Add your Python script execution here]
-# Example:
-python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/04GRN/grn01.py "${TUMOR_SUBTYPE}"
-
-# Deactivate the Conda environment
-conda deactivate
-
-# End of script
-echo "End of script"
+python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/04GRN/grn01.py 
 

@@ -4,16 +4,17 @@ import scProportionTest as pt
 import os 
 import pandas as pd
 
+
 def main():
     data_dir = os.getenv("DATA_DIR", "./data")  
     output_dir = os.getenv("OUTPUT_DIR", "./data")
 
-    adata = sc.read_h5ad(os.path.join(data_dir,'adata.h5ad'))
+    adata = sc.read_h5ad(os.path.join(data_dir,'adata_scanvi_predictions.h5ad'))
     results = pt.permutation_test(adata,
                                    'TNBC',
                                    'ER',
                                    group_col='subtype',
-                                   cell_type_col='GenAnno',
+                                   cell_type_col='predicted_labels',
                                    nperm=10000,
                                    alpha=0.05,
                                    n_bootstrap=10000,
@@ -23,7 +24,7 @@ def main():
                                'TNBC',
                                'HER2',
                                group_col='subtype',
-                               cell_type_col='GenAnno',
+                               cell_type_col='predicted_labels',
                                nperm=10000,
                                alpha=0.05,
                                n_bootstrap=10000,
