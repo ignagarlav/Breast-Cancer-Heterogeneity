@@ -62,6 +62,7 @@ for file in listdir(databases_directory):
 
 databases_names = list(cis_target_data.keys())
 databases_names = [os.path.splitext(filename)[0] for filename in databases_names] 
+
 def derive_regulons(motifs, db_names=databases_names):
     if isinstance(motifs.columns, pd.MultiIndex):
         motifs.columns = motifs.columns.droplevel(0)

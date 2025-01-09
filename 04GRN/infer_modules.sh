@@ -23,5 +23,6 @@ singularity exec \
   /mnt/Common_files/databases/hg38_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.scores.feather \
   --annotations_fname /mnt/Common_files/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl \
   --expression_mtx_fname /mnt/exp_matrices/${SUBTYPE}_expression_matrix.loom \
-  --output /mnt/regulones/${SUBTYPE}_regulons.csv \
+  --output /mnt/03Motifs/${SUBTYPE}_motifs.csv \
   --num_workers 12
+
