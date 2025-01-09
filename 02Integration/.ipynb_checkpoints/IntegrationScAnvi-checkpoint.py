@@ -24,7 +24,7 @@ import os
 import torch
 
 data_dir = os.getenv("DATA_DIR")
-adata = sc.read_h5ad(os.path.join(data_dir,"adata_GenAnnoHighConf.h5ad"))
+adata = sc.read_h5ad(os.path.join(data_dir,"adata_GenAnno.h5ad"))
 
 #################### Crear modelo scanvi ############################
 
@@ -33,7 +33,7 @@ scvi_ref_path = os.path.join(model_dir, "scvi_model")
 
 
 # Load the model architecture (e.g., SCVI)
-adata.obs['cell_type'] = adata.obs['GenAnnoHighConf'].copy()
+adata.obs['cell_type'] = adata.obs['GenAnno'].copy()
 adata.obs['cell_type'] = adata.obs['cell_type'].astype('category')
 print(f"Unique cell types: {adata.obs['cell_type'].unique()}")
 
@@ -42,7 +42,7 @@ adata_hvg = adata[:, adata.var.highly_variable].copy()
 model = scvi.model.SCVI.load(scvi_ref_path,adata_hvg)
 
 scanvi_model = scvi.model.SCANVI.from_scvi_model(model, 
-                                      unlabeled_category="unknown",
+                                      unlabeled_category="Unknown",
                                       labels_key='cell_type') 
 
 
