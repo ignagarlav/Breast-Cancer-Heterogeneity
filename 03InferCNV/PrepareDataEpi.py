@@ -20,8 +20,8 @@ for tumor in ["ER", "HER2", "TNBC"]:
     # Filter data for the current tumor type
     adata_tumor = adata_orig[adata_orig.obs.subtype == tumor,:].copy()
 
-    ec_mask = adata_tumor.obs.GennAnno_ScAnvi.isin(['Epithelial', 'Cycling'])
-    t_mask = adata_tumor.obs.GennAnno_ScAnvi == 'T Cells'
+    ec_mask = adata_tumor.obs.GennAnno_ScAnvi.isin(['Epithelial', 'Cycling cells'])
+    t_mask = adata_tumor.obs.GennAnno_ScAnvi == 'T cells'
 
     epi_subset = adata_tumor[ec_mask].copy()
     t_subset = adata_tumor[t_mask].copy()
