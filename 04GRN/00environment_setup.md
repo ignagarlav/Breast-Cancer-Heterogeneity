@@ -90,3 +90,7 @@ Viendo los factores de transcripción activos por tipo celular me doy cuenta de 
 Por lo que antes de correr aucell anotar extensivamente las poblaciones de interés. 
 
 servirá luego en cellphonedb
+
+
+
+singularity exec --cleanenv --bind /home/igarzonalva/Proyecto_SC_TNBC/GSE161529/InferCNV:/data  my_infercnv_latest.sif jupyter notebook --KernelSpecManager.whitelist="['ir']"  --ip=0.0.0.0 --port=8888 --no-browser
