@@ -28,7 +28,7 @@ Here, we’re linking port 9999 on the login node to port 8888 on node123.
 
 To start jupyter: 
 
-singularity exec --bind /home/igarzonalva/Proyecto_SC_TNBC/GSE161529:/data   /home/igarzonalva/Proyecto_SC_TNBC/singularity_images/scarches_iga_latest.sif jupyter notebook --KernelSpecManager.whitelist=
+singularity exec --bind    /home/igarzonalva/Proyecto_SC_TNBC/singularity_images/scarches_iga_latest.sif jupyter notebook --KernelSpecManager.whitelist=
 "['scarches']"  --ip=0.0.0.0 --port=8888 --no-browser
 
 Through conda would be: 
