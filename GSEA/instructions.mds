@@ -1,0 +1,13 @@
+-- First column: gene set name (use an alias like 'na' so it doesn't repeat 'standard_name')
+standard_name 'na',
+
+-- Second column: all member symbols, concatenated by tabs
+group_concat(symbol, '       ')
+    -- ^ The argument '       ' is literally a tab character.
+    -- In many terminals, you can type Ctrl+V, then Tab to insert a literal tab.
+
+to run: 
+
+sqlite3 msigdb_v2023.1.Hs.db < myquery.sql
+
+SQLite/3.42.0-GCCcore-12.3.0
