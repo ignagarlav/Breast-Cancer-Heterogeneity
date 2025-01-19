@@ -60,6 +60,7 @@ scanvae.save(ref_path, overwrite=True)
 model = sca.models.SCANVI.load_query_data(
     target_adata,
     ref_path,
+    freeze_dropout=True,
 )
 model._unlabeled_indices = np.arange(target_adata.n_obs)
 model._labeled_indices = []
