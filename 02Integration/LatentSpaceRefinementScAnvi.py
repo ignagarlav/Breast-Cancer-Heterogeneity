@@ -42,7 +42,7 @@ CELLTYPE = os.getenv("CELL_TYPE") # cell type used as reference
 SCANVI_LATENT_KEY = "X_scANVI"
 
 #################### Load Adata ############################
-adata = sc.read_h5ad(os.path.join(DATA_DIR,"adata_GenAnno.h5ad"))
+adata = sc.read_h5ad(os.path.join(DATA_DIR,"GenAnnoPostScvi.h5ad"))
 adata.obs[CELLTYPE] = adata.obs[CELLTYPE].astype('category')
 print(f"Unique cell types: {adata.obs[CELLTYPE].cat.categories}")
 
@@ -61,7 +61,7 @@ scanvi_model = scvi.model.SCANVI.from_scvi_model(model,
 scanvi_model.train(max_epochs=40, n_samples_per_label=100)
 
 # Save scanvi model 
-scanvi_ref_path = os.path.join(MODEL_DIR, "scanvi_model_cuda")
+scanvi_ref_path = os.path.join(MODEL_DIR, "scanvi_model_cuda_refinement")
 scanvi_model.save(scanvi_ref_path, overwrite=True)
 print(f"Model saved in {scanvi_ref_path}")
 
@@ -70,4 +70,4 @@ adata.obsm[SCANVI_LATENT_KEY] = scanvi_model.get_latent_representation()
 sc.pp.neighbors(adata, use_rep=SCANVI_LATENT_KEY)
 sc.tl.leiden(adata)
 sc.tl.umap(adata)
-adata.write_h5ad(os.path.join(DATA_DIR,"adata_scanvi_cuda.h5ad"))
+adata.write_h5ad(os.path.join(DATA_DIR,"adata_scanvi_cuda_refinement.h5ad"))
