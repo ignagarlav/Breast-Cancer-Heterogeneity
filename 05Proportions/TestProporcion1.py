@@ -12,7 +12,7 @@ def main():
     data_dir = os.getenv("DATA_DIR")  
     output_dir = os.getenv("OUTPUT_DIR")
 
-    adata_dir = os.path.join(data_dir,'adata_scanvi_predictions.h5ad')
+    adata_dir = os.path.join(data_dir,'full_adata_post_label_transfer.h5ad')
     print(f"Reading adata from {adata_dir}")
     adata = sc.read_h5ad(adata_dir)
 
@@ -21,13 +21,13 @@ def main():
                                    group1,
                                    group2,
                                    group_col='subtype',
-                                   cell_type_col='predicted_labels',
+                                   cell_type_col='LabelTransferAnno',
                                    nperm=10000,
                                    alpha=0.05,
                                    n_bootstrap=10000,
                                    verbose=True)
     print(f"Saving results to {output_dir}")
-    results.to_csv(os.path.join(output_dir,f"scPropTest_{group2}_vs_ref_{group1}_results.csv"), index=False)
+    results.to_csv(os.path.join(output_dir,f"scPropTest_{group2}_vs_ref_{group1}.csv"), index=False)
     
 
 if __name__ == "__main__":

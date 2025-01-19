@@ -30,8 +30,8 @@ python --version
 
 ############################ DIRECTORY SETUP ###############################
 
-export DATA_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/Integration/adata"
-export OUTPUT_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/proportiontest"
+export DATA_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/LabelTransfer/adatas"
+export OUTPUT_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/proportiontest/post_label_transfer"
 
 pairs=(
     "TNBC ER"
@@ -51,6 +51,6 @@ group2=$(echo $pair | awk '{print $2}')
 
 echo "Running proportion test for groups $group1 and $group2"
 
-python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/Proportions/TestProporcion1.py "$group1" "$group2"
+python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/05Proportions/TestProporcion1.py "$group1" "$group2"
 
 
