@@ -14,7 +14,7 @@ This forwards local port 9999 to port 9999 on the HPC login node.
 2) Step 2: Allocate a Node with salloc
 
 From the HPC login node request an interactive session:
-salloc --nodes=1 --ntasks=1 --time=02:00:00
+salloc --nodes=1 --ntasks=1 --time=06:00:00 --partition=short
 Wait until a compute node is allocated (e.g., nodo07).
 
 3) Step3: SSH to the Allocated Node (Second Tunnel)
