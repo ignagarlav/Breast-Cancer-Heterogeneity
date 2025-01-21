@@ -1,0 +1,79 @@
+2025-01-21 00:57:11,102 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:35716'
+2025-01-21 00:57:11,156 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:45288'
+2025-01-21 00:57:11,157 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:34512'
+2025-01-21 00:57:11,157 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:43161'
+2025-01-21 00:57:14,254 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:40583
+2025-01-21 00:57:14,254 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:40583
+2025-01-21 00:57:14,254 - distributed.worker - INFO -           Worker name:           SLURMCluster-0-1
+2025-01-21 00:57:14,255 - distributed.worker - INFO -          dashboard at:           172.16.2.6:44163
+2025-01-21 00:57:14,255 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:44251
+2025-01-21 00:57:14,255 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,255 - distributed.worker - INFO -               Threads:                          1
+2025-01-21 00:57:14,256 - distributed.worker - INFO -                Memory:                   7.45 GiB
+2025-01-21 00:57:14,256 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-sx17per1
+2025-01-21 00:57:14,256 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:43894
+2025-01-21 00:57:14,256 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,257 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:43894
+2025-01-21 00:57:14,257 - distributed.worker - INFO -           Worker name:           SLURMCluster-0-3
+2025-01-21 00:57:14,257 - distributed.worker - INFO -          dashboard at:           172.16.2.6:44053
+2025-01-21 00:57:14,257 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:40203
+2025-01-21 00:57:14,257 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:40668
+2025-01-21 00:57:14,258 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:44251
+2025-01-21 00:57:14,258 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:40203
+2025-01-21 00:57:14,258 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:40668
+2025-01-21 00:57:14,258 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,258 - distributed.worker - INFO -           Worker name:           SLURMCluster-0-0
+2025-01-21 00:57:14,259 - distributed.worker - INFO -           Worker name:           SLURMCluster-0-2
+2025-01-21 00:57:14,259 - distributed.worker - INFO -               Threads:                          1
+2025-01-21 00:57:14,259 - distributed.worker - INFO -          dashboard at:           172.16.2.6:42347
+2025-01-21 00:57:14,259 - distributed.worker - INFO -          dashboard at:           172.16.2.6:43899
+2025-01-21 00:57:14,259 - distributed.worker - INFO -                Memory:                   7.45 GiB
+2025-01-21 00:57:14,260 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:44251
+2025-01-21 00:57:14,260 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:44251
+2025-01-21 00:57:14,260 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-_yp6t2b7
+2025-01-21 00:57:14,260 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,260 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,261 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,261 - distributed.worker - INFO -               Threads:                          1
+2025-01-21 00:57:14,261 - distributed.worker - INFO -               Threads:                          1
+2025-01-21 00:57:14,261 - distributed.worker - INFO -                Memory:                   7.45 GiB
+2025-01-21 00:57:14,262 - distributed.worker - INFO -                Memory:                   7.45 GiB
+2025-01-21 00:57:14,262 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-6e81voma
+2025-01-21 00:57:14,262 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-rk2xq1fj
+2025-01-21 00:57:14,262 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:14,263 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:21,913 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:57:21,914 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:57:21,914 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:44251
+2025-01-21 00:57:21,914 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:21,915 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:44251
+2025-01-21 00:57:21,915 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:44251
+2025-01-21 00:57:21,915 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:21,916 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:44251
+2025-01-21 00:57:23,915 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:57:23,916 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:44251
+2025-01-21 00:57:23,917 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:23,917 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:44251
+2025-01-21 00:57:23,923 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:57:23,923 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:44251
+2025-01-21 00:57:23,924 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:57:23,924 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:44251
+2025-01-21 01:20:35,595 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.73s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 01:20:35,595 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.68s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 01:20:35,598 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.68s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 01:20:35,600 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.72s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+slurmstepd: error: *** JOB 1148159 ON nodo06 CANCELLED AT 2025-01-21T01:35:35 ***
+2025-01-21 01:35:35,518 - distributed._signals - INFO - Received signal SIGTERM (15)
+2025-01-21 01:35:35,519 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:35716'. Reason: signal-15
+2025-01-21 01:35:35,519 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 01:35:35,520 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:45288'. Reason: signal-15
+2025-01-21 01:35:35,520 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 01:35:35,521 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:43161'. Reason: signal-15
+2025-01-21 01:35:35,521 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 01:35:35,522 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:34512'. Reason: signal-15
+2025-01-21 01:35:35,522 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 01:35:35,548 - distributed.nanny - INFO - Worker process 171341 was killed by signal 15
+2025-01-21 01:35:35,554 - distributed.nanny - INFO - Worker process 171352 was killed by signal 15
+2025-01-21 01:35:35,560 - distributed.nanny - INFO - Worker process 171353 was killed by signal 15
+2025-01-21 01:35:35,660 - distributed.nanny - INFO - Worker process 171347 was killed by signal 15
+2025-01-21 01:35:35,662 - distributed.dask_worker - INFO - End worker

@@ -1,0 +1,167 @@
+2025-01-21 00:42:38,117 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:33533'
+2025-01-21 00:42:38,208 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:35101'
+2025-01-21 00:42:38,217 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:43831'
+2025-01-21 00:42:38,217 - distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.2.6:38120'
+2025-01-21 00:42:41,249 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:39730
+2025-01-21 00:42:41,249 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:39730
+2025-01-21 00:42:41,250 - distributed.worker - INFO -           Worker name:           SLURMCluster-2-1
+2025-01-21 00:42:41,250 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:35723
+2025-01-21 00:42:41,250 - distributed.worker - INFO -          dashboard at:           172.16.2.6:44538
+2025-01-21 00:42:41,250 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:35723
+2025-01-21 00:42:41,251 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:34618
+2025-01-21 00:42:41,251 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:33775
+2025-01-21 00:42:41,251 - distributed.worker - INFO -           Worker name:           SLURMCluster-2-0
+2025-01-21 00:42:41,252 - distributed.worker - INFO -       Start worker at:     tcp://172.16.2.6:46665
+2025-01-21 00:42:41,251 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,251 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:33775
+2025-01-21 00:42:41,252 - distributed.worker - INFO -          dashboard at:           172.16.2.6:39039
+2025-01-21 00:42:41,252 - distributed.worker - INFO -          Listening to:     tcp://172.16.2.6:46665
+2025-01-21 00:42:41,252 - distributed.worker - INFO -               Threads:                          2
+2025-01-21 00:42:41,253 - distributed.worker - INFO -           Worker name:           SLURMCluster-2-3
+2025-01-21 00:42:41,253 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:34618
+2025-01-21 00:42:41,253 - distributed.worker - INFO -           Worker name:           SLURMCluster-2-2
+2025-01-21 00:42:41,253 - distributed.worker - INFO -                Memory:                   5.59 GiB
+2025-01-21 00:42:41,254 - distributed.worker - INFO -          dashboard at:           172.16.2.6:34123
+2025-01-21 00:42:41,254 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,254 - distributed.worker - INFO -          dashboard at:           172.16.2.6:41058
+2025-01-21 00:42:41,254 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-xp2dh3g_
+2025-01-21 00:42:41,255 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:34618
+2025-01-21 00:42:41,255 - distributed.worker - INFO -               Threads:                          2
+2025-01-21 00:42:41,255 - distributed.worker - INFO - Waiting to connect to: tcp://159.237.145.53:34618
+2025-01-21 00:42:41,255 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,256 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,256 - distributed.worker - INFO -                Memory:                   5.59 GiB
+2025-01-21 00:42:41,256 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,257 - distributed.worker - INFO -               Threads:                          2
+2025-01-21 00:42:41,257 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-_vu7tom0
+2025-01-21 00:42:41,257 - distributed.worker - INFO -               Threads:                          2
+2025-01-21 00:42:41,257 - distributed.worker - INFO -                Memory:                   5.59 GiB
+2025-01-21 00:42:41,258 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,258 - distributed.worker - INFO -                Memory:                   5.59 GiB
+2025-01-21 00:42:41,258 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-w0x_zj6i
+2025-01-21 00:42:41,259 - distributed.worker - INFO -       Local Directory: /tmp/dask-scratch-space/worker-ct26ege3
+2025-01-21 00:42:41,259 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:41,259 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:43,309 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:42:43,310 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:34618
+2025-01-21 00:42:43,311 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:43,311 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:34618
+2025-01-21 00:42:43,312 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:42:43,313 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:34618
+2025-01-21 00:42:43,313 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:43,313 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:42:43,314 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:34618
+2025-01-21 00:42:43,314 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:34618
+2025-01-21 00:42:43,315 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:43,315 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-21 00:42:43,316 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:34618
+2025-01-21 00:42:43,316 - distributed.worker - INFO -         Registered to: tcp://159.237.145.53:34618
+2025-01-21 00:42:43,317 - distributed.worker - INFO - -------------------------------------------------
+2025-01-21 00:42:43,318 - distributed.core - INFO - Starting established connection to tcp://159.237.145.53:34618
+2025-01-21 00:47:02,857 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.80s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 00:47:02,858 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.78s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 00:47:02,858 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.79s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 00:47:02,858 - distributed.core - INFO - Event loop was unresponsive in Worker for 9.78s.  This is often caused by long-running GIL-holding functions or moving large chunks of data. This can cause timeouts and instability.
+2025-01-21 00:49:23,422 - distributed.worker - INFO - Stopping worker at tcp://172.16.2.6:33775. Reason: scheduler-close
+2025-01-21 00:49:23,422 - distributed.worker - INFO - Stopping worker at tcp://172.16.2.6:39730. Reason: scheduler-close
+2025-01-21 00:49:23,423 - distributed.worker - INFO - Stopping worker at tcp://172.16.2.6:35723. Reason: scheduler-close
+2025-01-21 00:49:23,423 - distributed.worker - INFO - Stopping worker at tcp://172.16.2.6:46665. Reason: scheduler-close
+2025-01-21 00:49:23,426 - distributed.batched - INFO - Batched Comm Closed <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53464 remote=tcp://159.237.145.53:34618>
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 297, in write
+    raise StreamClosedError()
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/batched.py", line 115, in _background_send
+    nbytes = yield coro
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/tornado/gen.py", line 766, in run
+    value = future.result()
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 307, in write
+    convert_stream_closed_error(self, e)
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 142, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53464 remote=tcp://159.237.145.53:34618>: Stream is closed
+2025-01-21 00:49:23,427 - distributed.batched - INFO - Batched Comm Closed <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53462 remote=tcp://159.237.145.53:34618>
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 297, in write
+    raise StreamClosedError()
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/batched.py", line 115, in _background_send
+    nbytes = yield coro
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/tornado/gen.py", line 766, in run
+    value = future.result()
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 307, in write
+    convert_stream_closed_error(self, e)
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 142, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53462 remote=tcp://159.237.145.53:34618>: Stream is closed
+2025-01-21 00:49:23,432 - distributed.batched - INFO - Batched Comm Closed <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53466 remote=tcp://159.237.145.53:34618>
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 297, in write
+    raise StreamClosedError()
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/batched.py", line 115, in _background_send
+    nbytes = yield coro
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/tornado/gen.py", line 766, in run
+    value = future.result()
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 307, in write
+    convert_stream_closed_error(self, e)
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 142, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53466 remote=tcp://159.237.145.53:34618>: Stream is closed
+2025-01-21 00:49:23,427 - distributed.batched - INFO - Batched Comm Closed <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53460 remote=tcp://159.237.145.53:34618>
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 297, in write
+    raise StreamClosedError()
+tornado.iostream.StreamClosedError: Stream is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/batched.py", line 115, in _background_send
+    nbytes = yield coro
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/tornado/gen.py", line 766, in run
+    value = future.result()
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 307, in write
+    convert_stream_closed_error(self, e)
+  File "/home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/comm/tcp.py", line 142, in convert_stream_closed_error
+    raise CommClosedError(f"in {obj}: {exc}") from exc
+distributed.comm.core.CommClosedError: in <TCP (closed) Worker->Scheduler local=tcp://172.16.2.6:53460 remote=tcp://159.237.145.53:34618>: Stream is closed
+2025-01-21 00:49:23,490 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://172.16.2.6:33533'. Reason: scheduler-close
+2025-01-21 00:49:23,492 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://172.16.2.6:38120'. Reason: scheduler-close
+2025-01-21 00:49:23,493 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://172.16.2.6:35101'. Reason: scheduler-close
+2025-01-21 00:49:23,493 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-513276f27f9b96fb93c9f5500a59453d')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,494 - distributed.nanny - INFO - Closing Nanny gracefully at 'tcp://172.16.2.6:43831'. Reason: scheduler-close
+2025-01-21 00:49:23,495 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-cc328d22b271c63025acc3a72e84787e')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,496 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-a78a90beebe1abd333827fcc8a55789e')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,496 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-66eedaf039470f81c5701f102e36e553')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,496 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-e03301b37c4d609f82759afd7467ed44')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,498 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-50450d214f2a409511191b45be9ed19a')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,498 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-0c4e03ec26a4c8ed0749729d61eb1122')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-01-21 00:49:23,499 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('infer_partial_network-72acc1240f1072eb063123cce99bb0a5')" coro=<Worker.execute() done, defined at /home/igarzonalva/.conda/envs/arboreto-env/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+slurmstepd: error: *** JOB 1148132 ON nodo06 CANCELLED AT 2025-01-21T00:49:23 ***
+2025-01-21 00:49:23,535 - distributed._signals - INFO - Received signal SIGTERM (15)
+2025-01-21 00:49:23,535 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:33533'. Reason: signal-15
+2025-01-21 00:49:23,536 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 00:49:23,536 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:35101'. Reason: signal-15
+2025-01-21 00:49:23,537 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 00:49:23,537 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:43831'. Reason: signal-15
+2025-01-21 00:49:23,537 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 00:49:23,538 - distributed.nanny - INFO - Closing Nanny at 'tcp://172.16.2.6:38120'. Reason: signal-15
+2025-01-21 00:49:23,538 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-21 00:49:23,555 - distributed.nanny - INFO - Worker process 169178 was killed by signal 15
+2025-01-21 00:49:23,564 - distributed.nanny - INFO - Worker process 169173 was killed by signal 15
+2025-01-21 00:49:23,564 - distributed.nanny - INFO - Worker process 169182 was killed by signal 15
+2025-01-21 00:49:23,810 - distributed.nanny - INFO - Worker process 169185 was killed by signal 15
+2025-01-21 00:49:23,813 - distributed.dask_worker - INFO - End worker
