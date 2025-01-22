@@ -1,16 +1,16 @@
 #!/bin/bash
-#SBATCH -J CudScVi         # Nombre del trabajo
-#SBATCH -o /home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/ScViCuda%A.out       
-#SBATCH -e /home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/ScViCuda%A.err      
+#SBATCH -J CudAnvi        
+#SBATCH -o /home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/ScAnviCuda%A.out       
+#SBATCH -e /home/igarzonalva/Proyecto_SC_TNBC/SlurmOutput/GSE161529/ScAnviCuda%A.err      
 #SBATCH --time=10:00:00              
 #SBATCH --partition=short           
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1 
 #SBATCH --nodelist=nodo10
-#SBATCH --mem=50G
-#SBATCH --mail-user=igarzonalva@alumni.unav.es   # Dirección de correo
-#SBATCH --mail-type=END,FAIL         # Notificaciones por correo
+#SBATCH --mem=32G
+#SBATCH --mail-user=igarzonalva@alumni.unav.es   
+#SBATCH --mail-type=END,FAIL         
 
 # Change to the working directory
 cd /home/igarzonalva/Proyecto_SC_TNBC
@@ -40,6 +40,7 @@ python --version
 
 export DATA_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/02_Integration/adata"
 export MODEL_DIR="/home/igarzonalva/Proyecto_SC_TNBC/GSE161529/02_Integration/models"
+export CELL_TYPE="IGA_First_GenAnnoV2"
 
-python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/02Integration/IntegrationScviAllVars.py
+python /home/igarzonalva/Proyecto_SC_TNBC/repos/Breast-Cancer-Heterogeneity/02Integration/IntegrationScAnvi_allvars.py
 
