@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1 
 #SBATCH --nodelist=nodo10
-#SBATCH --mem=32G
+#SBATCH --mem=50G
 #SBATCH --mail-user=igarzonalva@alumni.unav.es   
 #SBATCH --mail-type=END,FAIL         
 
